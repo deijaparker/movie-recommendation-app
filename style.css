@@ -52,3 +52,27 @@ select#genres {
   color: #ffcc00;
   border-radius: 5px;
 }
+
+/* Button Styles */
+button#playBtn,
+button#likeBtn,
+button#dislikeBtn {
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 10px 20px;
+  border: 2px solid #ffcc00;
+  background-color: #222;
+  color: #ffcc00;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  text-shadow: 1px 1px 0px #000;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button#playBtn:hover,
+button#likeBtn:hover,
+button#dislikeBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.7);
+}
