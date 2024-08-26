@@ -148,3 +148,6 @@ const displayMovie = (movieInfo) => {
   likeBtn.onclick = likeMovie;
   dislikeBtn.onclick = dislikeMovie;
 };
+
+getGenres().then((genres) => populateGenreDropdown(genres));
+playBtn.onclick = showRandomMovie;
