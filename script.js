@@ -65,3 +65,13 @@ const showRandomMovie = async () => {
   const info = await getMovieInfo(randomMovie);
   displayMovie(info);
 };
+
+const populateGenreDropdown = (genres) => {
+  const select = document.getElementById("genres");
+  genres.forEach((genre) => {
+    const option = document.createElement("option");
+    option.value = genre.id;
+    option.text = genre.name;
+    select.appendChild(option);
+  });
+};
