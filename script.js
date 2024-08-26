@@ -124,3 +124,27 @@ const createMovieOverview = (overview) => {
   overviewParagraph.textContent = overview;
   return overviewParagraph;
 };
+
+const getRandomMovie = (movies) => {
+  const randomIndex = Math.floor(Math.random() * movies.length);
+  return movies[randomIndex];
+};
+
+const displayMovie = (movieInfo) => {
+  const moviePosterDiv = document.getElementById("moviePoster");
+  const movieTextDiv = document.getElementById("movieText");
+  const likeBtn = document.getElementById("likeBtn");
+  const dislikeBtn = document.getElementById("dislikeBtn");
+
+  const moviePoster = createMoviePoster(movieInfo.poster_path);
+  const titleHeader = createMovieTitle(movieInfo.title);
+  const overviewText = createMovieOverview(movieInfo.overview);
+
+  moviePosterDiv.appendChild(moviePoster);
+  movieTextDiv.appendChild(titleHeader);
+  movieTextDiv.appendChild(overviewText);
+
+  showBtns();
+  likeBtn.onclick = likeMovie;
+  dislikeBtn.onclick = dislikeMovie;
+};
