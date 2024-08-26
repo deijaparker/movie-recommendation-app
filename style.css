@@ -107,3 +107,16 @@ p#movieOverview {
   line-height: 1.6;
   max-width: 80%;
 }
+
+/* Like/Dislike Button Styles */
+#likeOrDislikeBtns {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button#likeBtn i,
+button#dislikeBtn i {
+  font-size: 1.5rem;
+  color: #ffcc00;
+}
