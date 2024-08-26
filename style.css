@@ -1,0 +1,32 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background: linear-gradient(to bottom, #1e1e1e, #3b3b3b);
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1#appTitle {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  text-shadow: 2px 2px 0px #000, 4px 4px 0px #555;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #ffcc00;
+  padding-bottom: 10px;
+}
