@@ -75,3 +75,8 @@ const populateGenreDropdown = (genres) => {
     select.appendChild(option);
   });
 };
+
+const getSelectedGenre = () => {
+  const selectedGenre = document.getElementById("genres").value;
+  return selectedGenre;
+};
