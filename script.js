@@ -92,3 +92,13 @@ const clearCurrentMovie = () => {
   moviePosterDiv.innerHTML = "";
   movieTextDiv.innerHTML = "";
 };
+
+const likeMovie = () => {
+  clearCurrentMovie();
+  showRandomMovie();
+};
+
+const dislikeMovie = () => {
+  clearCurrentMovie();
+  showRandomMovie();
+};
