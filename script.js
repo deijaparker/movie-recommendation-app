@@ -80,3 +80,15 @@ const getSelectedGenre = () => {
   const selectedGenre = document.getElementById("genres").value;
   return selectedGenre;
 };
+
+const showBtns = () => {
+  const btnDiv = document.getElementById("likeOrDislikeBtns");
+  btnDiv.removeAttribute("hidden");
+};
+
+const clearCurrentMovie = () => {
+  const moviePosterDiv = document.getElementById("moviePoster");
+  const movieTextDiv = document.getElementById("movieText");
+  moviePosterDiv.innerHTML = "";
+  movieTextDiv.innerHTML = "";
+};
