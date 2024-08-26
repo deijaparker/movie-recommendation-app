@@ -102,3 +102,25 @@ const dislikeMovie = () => {
   clearCurrentMovie();
   showRandomMovie();
 };
+
+const createMoviePoster = (posterPath) => {
+  const moviePosterUrl = `https://image.tmdb.org/t/p/original/${posterPath}`;
+  const posterImg = document.createElement("img");
+  posterImg.setAttribute("src", moviePosterUrl);
+  posterImg.setAttribute("id", "moviePoster");
+  return posterImg;
+};
+
+const createMovieTitle = (title) => {
+  const titleHeader = document.createElement("h1");
+  titleHeader.setAttribute("id", "movieTitle");
+  titleHeader.textContent = title;
+  return titleHeader;
+};
+
+const createMovieOverview = (overview) => {
+  const overviewParagraph = document.createElement("p");
+  overviewParagraph.setAttribute("id", "movieOverview");
+  overviewParagraph.textContent = overview;
+  return overviewParagraph;
+};
